@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name '*.html' -exec cp -ru --parents {} ../ \;
+rsync -ru --ignore-existing --include '*/' --include '*.html' --exclude '*' ./ ../
