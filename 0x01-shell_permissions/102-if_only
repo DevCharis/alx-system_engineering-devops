@@ -1,2 +1,2 @@
 #!/bin/bash
-[ $(ls -l hello | awk '{print $3}') = "guillaume" ] && chown betty hello || echo "The file 'hello' is not owned by 'guillaume'."
+chown betty hello
