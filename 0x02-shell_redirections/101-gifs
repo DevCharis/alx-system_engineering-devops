@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name '*.gif' -exec bash -c 'echo "${1%.*}"' _ {} \; | LC_ALL=C sort
