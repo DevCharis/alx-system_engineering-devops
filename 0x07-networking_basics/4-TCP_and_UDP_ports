@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-
 # Display only listening sockets with PID/Program name
 ss -tuln --process
