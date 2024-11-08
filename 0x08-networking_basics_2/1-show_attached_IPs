@@ -1,6 +1,4 @@
 #!/bin/bash
 # Display all active IPv4 addresses on the system
-# Using ip command
 ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}'
-# Alternatively, if ifconfig is installed, uncomment this section
-/sbin/ifconfig | grep -oP 'inet\s+\K\d+\.\d+\.\d+\.\d+'
+
